@@ -8,6 +8,12 @@
     <name>${project.groupId}:${project.artifactId}</name>
     <description>This library … .</description>
     <url>https://github.com/SamuelSoubaya/SharePortFolio</url>
+    <licenses>
+        <license>
+            <name>The Apache License, Version 2.0</name>
+            <url>http://www.apache.org/licenses/LICENSE-2.0.txt</url>
+        </license>
+    </licenses>
      <dependencies>
         <dependency>
             <groupId>junit</groupId>
@@ -26,12 +32,11 @@
         <project.build.sourceEncoding>UTF-8</project.build.sourceEncoding>
         <maven.compiler.source>1.7</maven.compiler.source>
         <maven.compiler.target>1.7</maven.compiler.target>
+        <sonar.projectKey>SamuelSoubaya_SharePortFolio</sonar.projectKey>
         <sonar.organization>samuelsoubaya</sonar.organization>
-        <sonar.projectKey>xxxxxxx</sonar.projectKey>
         <sonar.host.url>https://sonarcloud.io</sonar.host.url>
         <sonar.java.libraries></sonar.java.libraries>
     </properties>
-   
     <build>
         <plugins>
             <plugin>
@@ -68,10 +73,10 @@
             </plugin>       
         </plugins>
     </build>
- <reporting>
-    <plugins>
-        <plugin>
-            <groupId>org.apache.maven.plugins</groupId>
+    <reporting>
+        <plugins>
+            <plugin>
+                <groupId>org.apache.maven.plugins</groupId>
                 <artifactId>maven-checkstyle-plugin</artifactId>
                 <version>3.1.2</version>
                 <configuration>
@@ -79,23 +84,13 @@
                 </configuration>
             </plugin>
             <plugin>
-        <groupId>org.apache.maven.plugins</groupId>
-        <artifactId>maven-javadoc-plugin</artifactId>
-        <version>3.2.0</version>
-        <configuration>
-            <docfilessubdirs>true</docfilessubdirs>
-        </configuration>
-</plugin>
-
+                <groupId>org.apache.maven.plugins</groupId>
+                <artifactId>maven-javadoc-plugin</artifactId>
+                <version>3.2.0</version>
+                <configuration>
+                    <docfilessubdirs>true</docfilessubdirs>
+                </configuration>
+            </plugin>
         </plugins>
-    </reporting>
- <licenses>
-    <license>
-        <name>The Apache License, Version 2.0</name>
-        <url>http://www.apache.org/licenses/LICENSE-2.0.txt</url>
-    </license>
-</licenses>
-    
-
-   
+    </reporting> 
 </project>
